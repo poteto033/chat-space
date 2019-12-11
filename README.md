@@ -28,13 +28,29 @@ Things you may want to cover:
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body_id|integer|null: false, foreign_key: true|
+|image_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
+- belongs_to :body
+- belongs_to :image
 - belongs_to :user
 - belongs_to ;group
+
+## bodiesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+### Association
+- has_many :messages
+
+## imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|string|null: false|
+### Association
+- has_many :messages
 
 ## groupsテーブル
 |Column|Type|Options|
