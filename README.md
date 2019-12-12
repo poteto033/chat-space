@@ -22,24 +22,14 @@ Things you may want to cover:
 |username|string|null: false, unique: true|
 ### Association
 - has_many :messages
-- has_many :images
 - has_many :users_groups
 - has_many  :groups,  through:  :users_groups
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-### Association
-- belongs_to :user
-- belongs_to ;group
-
-## imagesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|image|string|null: false|
+|body|text||
+|image|string||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -52,7 +42,6 @@ Things you may want to cover:
 |name|string|null: false|
 ### Association
 - has_many :messages
-- has_many :images
 - has_many :users_groups
 - has_many :users, through:  :users_groups
 
