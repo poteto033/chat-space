@@ -19,7 +19,7 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false, unique: true|
 |password|string|null: false|
-|username|string|null: false, unique: true|
+|name|string|null: false, unique: true|
 ### Association
 - has_many :messages
 - has_many :users_groups
