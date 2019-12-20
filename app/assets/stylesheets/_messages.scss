@@ -8,6 +8,7 @@ html,body{
   .wrapper{
     display:flex;
     .chat-side{
+      font-weight:bold;
       width:300px;
       color:white;
       .side-header{
@@ -33,16 +34,29 @@ html,body{
               }
             }
           }
-
-
+        }
+      }
+      .side-groups{
+        height:calc(100vh - 100px);
+        background-color: #2f3e51;
+        padding:20px;
+        &__group{
+          display: block;
+          color:white;
+          text-decoration:none;
+          width: 260px;
+          margin-bottom:40px;
+          p.side-groups__group__name{
+            margin-bottom:5px;
+            font-size:15px;
+          }
+          p.side-gorups__group__latest-message{
+            font-size:11px;
+          }
         }
       }
 
     }
-      .side-groups{
-        height:calc(100vh - 100px);
-        background-color: #2f3e51;
-      }
     
     .chat-main{
       width:calc(100vw - 300px);
