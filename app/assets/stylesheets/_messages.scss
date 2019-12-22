@@ -99,13 +99,35 @@ html,body{
             color: #38aef0;
           }
         }
-          
       }
     
       .massages{
         height:calc(100vh - calc(100px + 90px));
         background-color: #fafafa;
+        padding: 35px 40px;
+        .massage{
+          margin-bottom: 46px;
+          &__uppar-info {
+            display: flex;
+            margin-bottom: 12px;
+            p.massage__uppar-info__talker {
+              font-size: 16px;
+              color:#333333;
+
+            }
+            p.massage__uppar-info__date {
+              font-size:12px;
+              color: #999999;
+              margin-left: 10px;
+            }
+          }
+          p.massage__text {
+            font-size:14px;
+            color: #434A54;
+          }
+       } 
       }
+    
       .form{
         height: 90px;
         background-color: #d2d2d2;
