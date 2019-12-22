@@ -1,5 +1,15 @@
 .chat-main
   .main-header
+    .main-header__left-box
+      .main-header__left-box__current-group
+        現在のグループ名
+      %ul.main-header__left-box__membar-list
+        Membar：
+        %li.main-header__left-box__membar-list__membar
+          name
+    =link_to "#" do
+      .main-header__edit-btn
+        Edit
   .massages
   .form
 
