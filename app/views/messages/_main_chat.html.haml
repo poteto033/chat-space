@@ -35,7 +35,11 @@
           2019/12/23(Mon) 06:00:00
       %p.massage__text
         おはようございます
-
-    
-  .form
-
+  %form.new-massage
+    .input-box
+      %input{type: "text",class:"input-box__text",placeholder:"type a massage"}
+      %label{class: "input-box__image"}
+        =icon('far', 'image')
+        %input{type: "file",class: "input-box__image__file"}
+    %input{type: "submit",name:"commit",value:"Send",class: "submit-btn"}
+      
