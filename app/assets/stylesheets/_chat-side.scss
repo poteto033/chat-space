@@ -1,0 +1,51 @@
+@import "./mixins";
+
+.chat-side{
+  @include black-size(100%,300px);
+  font-weight:bold;
+  color:white;
+
+  .side-header{
+    @include black-size(100px);
+    @include black-layout(#253141,0 20px);
+    display: flex;
+    align-items: center;
+    &__box{
+      @include black-size(20px,100%);
+      @include justify-content(space-between);
+      line-height: 16px;
+
+      ul {
+        @include justify-content(flex-end);
+
+        li {
+          margin-left:5px;
+          a {
+            color:white;
+          }
+        }
+      }
+    }
+  }
+
+  .side-groups{
+    @include black-size(calc(100vh - 100px));
+    @include black-layout(#2f3e51,20px);
+    &__group{
+      @include font-layout(white,15px);
+      display: block;
+      text-decoration:none;
+      margin-bottom:40px;
+
+      p.side-groups__group__name{
+        margin-bottom:5px;
+        font-size:15px;
+      }
+
+      p.side-gorups__group__latest-message{
+        font-size:11px;
+      }
+    }
+  }
+
+}

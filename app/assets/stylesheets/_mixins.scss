@@ -1,0 +1,19 @@
+@mixin black-size($height: 100%,$width: 100%) {
+  height: $height;
+  width: $width;
+}
+
+@mixin black-layout($background-color:white,$padding: 0px){
+  background-color: $background-color;
+  padding: $padding;
+}
+
+@mixin font-layout($color: white,$font-size: 15px){
+  color: $color;
+  font-size: $font-size;
+  }
+  
+@mixin justify-content($jusutify-content: space-between){
+  display:flex;
+  justify-content: $jusutify-content;
+}
