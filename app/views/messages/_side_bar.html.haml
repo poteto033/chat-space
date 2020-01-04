@@ -1,3 +1,14 @@
 .side-bar
   .header
+    .header__box
+      %h3.header__box__name
+        name
+      %ul.header__box__lists
+        %li.list
+          = link_to '#' do
+            = icon('fa', 'edit',class: 'icon')
+        %li.list
+          = link_to '#' do
+            = icon('fa', 'cog',class: 'icon')
+
   .groups
