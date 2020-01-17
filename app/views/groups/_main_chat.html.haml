@@ -31,12 +31,11 @@
           2020/01/01
       .lower-meesage
         メッセージ
-        
   .form
-    %form{class: "new-massage"}
-      .input-box
-        %input{type: "text",class: "input-box__text",placeholder: "type a massage"}
-        %label{class: "input-box__image"}
-          =icon('far', 'image')
-          %input{type: "file",class: "input-box__image__file"}
-      %input{type: "submit",value: "Send",class: "submit-btn"}
+    %form
+      %input.form__message
+      .form__mask
+        %label.form__mask__image
+          = icon('fa','image',class: 'icon')
+          %input.hidden{type: 'file'}
+      %input.form__submit{type: 'submit', value: 'Send'}
